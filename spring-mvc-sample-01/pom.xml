@@ -76,7 +76,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>hotel-mnmgt</finalName>
+		<finalName>${artifactId}-${version}</finalName>
 		<plugins>
 
 			<!-- Jetty Plugin -->
