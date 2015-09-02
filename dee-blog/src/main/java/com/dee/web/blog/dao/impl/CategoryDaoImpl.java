@@ -5,8 +5,6 @@ import java.util.List;
 import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.dee.web.blog.dao.CategoryDao;
 import com.dee.web.blog.enumeration.EntityVersion;
@@ -18,7 +16,6 @@ import com.dee.web.blog.util.param.PageableData;
  */
 
 @Repository
-@Transactional(propagation = Propagation.REQUIRED)
 public class CategoryDaoImpl extends GenericDaoImpl<CategoryModel, Long> implements CategoryDao {
 
     public CategoryDaoImpl() {

@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.dee.web.blog.dao.ArticleDao;
 import com.dee.web.blog.dao.CategoryDao;
 import com.dee.web.blog.enumeration.EntityVersion;
+import com.dee.web.blog.model.core.ArticleModel;
 import com.dee.web.blog.model.core.CategoryModel;
 
 /**
@@ -21,6 +23,9 @@ public class DataRepo {
     @Autowired
     private CategoryDao categoryDao;
     
+    @Autowired
+    private ArticleDao articleDao;
+    
     @PersistenceContext
     private EntityManager em;
 
@@ -32,7 +37,7 @@ public class DataRepo {
         categoryRoot.setDescription("Information Technology");
         categoryRoot.setName("IT");
         categoryRoot.setVersion(EntityVersion.Online);
-        saveCategory(categoryRoot);
+        categoryDao.save(categoryRoot);
         
         CategoryModel category1 = new CategoryModel();
         category1.setCode("java");
@@ -40,7 +45,7 @@ public class DataRepo {
         category1.setName("Java");
         category1.setVersion(EntityVersion.Online);
         category1.setParentId(categoryRoot.getId());
-        saveCategory(category1);
+        categoryDao.save(category1);
         
         CategoryModel category2 = new CategoryModel();
         category2.setCode("java-core");
@@ -48,7 +53,7 @@ public class DataRepo {
         category2.setName("Java Core");
         category2.setVersion(EntityVersion.Online);
         category2.setParentId(category1.getId());
-        saveCategory(category2);
+        categoryDao.save(category2);
         
         CategoryModel category3 = new CategoryModel();
         category3.setCode("jee");
@@ -56,7 +61,7 @@ public class DataRepo {
         category3.setName("JEE");
         category3.setVersion(EntityVersion.Staging);
         category3.setParentId(category1.getId());
-        saveCategory(category3);
+        categoryDao.save(category3);
         
         CategoryModel category4 = new CategoryModel();
         category4.setCode("android");
@@ -64,17 +69,39 @@ public class DataRepo {
         category4.setName("Android");
         category4.setVersion(EntityVersion.Online);
         category4.setParentId(categoryRoot.getId());
-        saveCategory(category4);
+        categoryDao.save(category4);
     } 
-
-    @Transactional
-    public void saveCategory(CategoryModel category) {
-        categoryDao.save(category);
-    }
 
     @Transactional
     public void removeAllCategories() {
         categoryDao.removeAll();
+    }
+    
+    @Transactional
+    public void prepageArticles() {
+        for(int i = 1; i <= 10; i++) {
+            ArticleModel article = new ArticleModel();
+            article.setCode("article" + i);
+            article.setTitle("Title " + i);
+            article.setContent("Content " + i);
+            article.setSubTitle("Sub Title " + i);
+            if(i >= 8) {
+                article.setVersion(EntityVersion.Staging);
+            } else {
+                article.setVersion(EntityVersion.Online);
+            }
+            if(i % 3 == 0) {
+                article.setCategoryId(1L);
+            } else {
+                article.setCategoryId(2L);
+            }
+            articleDao.save(article);
+        }
+    } 
+
+    @Transactional
+    public void removeAllArticles() {
+        articleDao.removeAll();
     }
     
 }

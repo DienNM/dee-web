@@ -17,7 +17,7 @@ public class PageableData implements Serializable {
     private int totalPages;
     
     public PageableData() {
-        this(0, 100);
+        this(0, 50);
     }
     
     public PageableData(int pageIndex, int pageSize) {
