@@ -9,6 +9,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -23,6 +25,13 @@ import com.dee.webdee.model.AuditModel;
 
 @Entity
 @Table(name = "address")
+@NamedQueries({
+    @NamedQuery(name = "findAddressByOwner", query = "FROM AddressModel WHERE owner = :owner"),
+    @NamedQuery(name = "findAddressByOwnerInBookAndType", 
+           query = "FROM AddressModel WHERE owner = :owner AND visibleInAddressBook = 1 AND shippingAddress = :shipping AND billingAddress = :billing AND contactAddress = :contact"),
+    @NamedQuery(name = "findAddressAddressByOwnerAndInBook", 
+           query = "FROM AddressModel WHERE owner = :owner AND visibleInAddressBook = :inBook"),
+})
 public class AddressModel extends AuditModel {
     
     private static final long serialVersionUID = 1L;
