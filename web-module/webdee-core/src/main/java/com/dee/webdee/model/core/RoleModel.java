@@ -2,12 +2,8 @@ package com.dee.webdee.model.core;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import com.dee.webdee.model.AuditLangCodeModel;
 
 /**
  * @author dien.nguyen
@@ -15,42 +11,18 @@ import com.dee.webdee.model.AuditLangCodeModel;
 
 @Entity
 @Table(name = "role")
-public class RoleModel extends AuditLangCodeModel{
-    
-    private static final long serialVersionUID = 1L;
+public class RoleModel{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @Column(name = "role_code", length = 30, nullable = false, unique = true)
+    private String roleCode;
     
-    @Column(name = "role_name", length = 30, nullable = false)
-    private String roleName;
-    
-    @Column(name = "description", length = 100)
-    private String description;
-
-    public String getRoleName() {
-        return roleName;
+    public String getRoleCode() {
+        return roleCode;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-    
 }

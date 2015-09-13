@@ -10,29 +10,21 @@ import javax.persistence.Embeddable;
  */
 
 @Embeddable
-public class SSCompositeKey  implements Serializable {
+public class LSCompositeKey  implements Serializable {
     
     private static final long serialVersionUID = 1L;
-    
-    public SSCompositeKey() {
-    }
-    
-    public SSCompositeKey(String id1, String id2) {
-        this.id1 = id1;
-        this.id2 = id2;
-    }
 
     @Column(name = "id1")
-    private String id1;
+    private Long id1;
     
     @Column(name = "id2")
     private String id2;
 
-    public String getId1() {
+    public Long getId1() {
         return id1;
     }
 
-    public void setId1(String id1) {
+    public void setId1(Long id1) {
         this.id1 = id1;
     }
 
