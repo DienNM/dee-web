@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
                               http://java.sun.com/xml/ns/javaee/web-app.xsd" version="3.0">
                               
-    <display-name>DEE Web Sample 01</display-name>
+    <display-name>DMC - DEE Management Console</display-name>
     
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -12,9 +12,7 @@
     </context-param>
     
     <listener>
-        <listener-class>
-            org.springframework.web.context.ContextLoaderListener
-        </listener-class>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
     
     <servlet>
@@ -23,7 +21,7 @@
         <load-on-startup>1</load-on-startup>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/spring/dispatcher-servlet.xml</param-value>
+            <param-value>/WEB-INF/spring/mvc-servlet.xml</param-value>
         </init-param>
     </servlet>
     

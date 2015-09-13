@@ -22,6 +22,7 @@
 	
 	<modules>
 	   <module>webdee-core</module>
+	   <module>webdee-dmc</module>
 	</modules>
 
 	<properties>
