@@ -14,7 +14,7 @@ public class CssController {
 
     @RequestMapping(value = "/core-concept", method = RequestMethod.GET)
     public String demoCoreConcept() {
-        return "core_concept";
+        return "core-concept/main";
     }
 
 }

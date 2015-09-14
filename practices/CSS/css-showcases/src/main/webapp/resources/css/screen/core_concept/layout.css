@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+#header {
+    height: 50px; 
+    width: 99.5%; 
+    border: 1px solid #999;
+    padding-left: 10px;
+};
+
+.example-section {
+	margin-top: 40px;
+}
+

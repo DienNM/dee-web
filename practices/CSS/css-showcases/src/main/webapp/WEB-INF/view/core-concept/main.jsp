@@ -5,16 +5,19 @@
 <!DOCTYPE html >
 <html>
 <head>
+    
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/external.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/core_concept/external.css">
     <title>CSS Core Concept</title>
+    
 </head>
 
 <body>
-	<jsp:include page="../include/header.jsp" />
 	<div id = "header">
 		<h1>CSS Core Concept</h1>
 	</div>
-	<jsp:include page="../include/footer.jsp" />
+	
+	<%@ include file="id.jsp" %>
+	<%@ include file="class.jsp" %>
 </body>
 </html>
