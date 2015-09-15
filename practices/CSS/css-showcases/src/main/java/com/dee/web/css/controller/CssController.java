@@ -31,5 +31,15 @@ public class CssController {
     public String demoColorBackgroundImage() {
         return "color-bg-img/main";
     }
+    
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String demoList() {
+        return "list/main";
+    }
+    
+    @RequestMapping(value = "/link", method = RequestMethod.GET)
+    public String demoLink() {
+        return "link/main";
+    }
 
 }
