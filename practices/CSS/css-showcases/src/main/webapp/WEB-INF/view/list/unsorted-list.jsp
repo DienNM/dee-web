@@ -32,19 +32,9 @@
 ul.unsorted1{
     list-style-type: square;
 }
-ul.unsorted2{
-    list-style-type: upper-alpha;
-}
-ul.unsorted3{
-    list-style-type: lower-roman;
-}
-ul.unsorted4{
-    list-style-type: none;
-}
 </pre>
         <hr>
         <div>
-            list-style-type: none;
             <ul class="unsorted5">
                 <li>Java</li>
                 <li>Spring</li>
@@ -53,7 +43,6 @@ ul.unsorted4{
         </div>
         <hr>
         <div>
-            background-color: red;
             <ul class="unsorted6">
                 <li>Java</li>
                 <li>Spring</li>
@@ -62,7 +51,6 @@ ul.unsorted4{
         </div>
         <hr>
         <div>
-            list-style-position: inside;
             <ul class="unsorted7">
                 <li>Java</li>
                 <li>Spring</li>
@@ -80,20 +68,6 @@ ul.unsorted4{
             </ul>
         </div>
 <pre class = "code">
-ul.unsorted5{
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    width:200px;
-}
-
-ul.unsorted7{
-    list-style-position: inside;
-    padding: 0px;
-    margin: 0px;
-    width:200px;
-}
-
 ul.unsorted8{
     list-style-position: inside;
 }
