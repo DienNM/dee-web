@@ -1,9 +1,15 @@
-@CHARSET "UTF-8";
 
-
-/* Example of ID
----------------------------------------*/
-
+<div class = "example-section">
+    <h2 class = "section-title">Example of Navigation Bar & Link</h2>
+    <div class = "section-content">
+        <ul class="navigation-bar-v">
+            <li><a href="#">Java</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Hibernate</a></li>
+            <li><a href="#">Jboss</a></li>
+            <li><a href="#">Spring Framework</a></li>
+        </ul>
+<pre class = "code">
 ul.navigation-bar-v {
     list-style-type: none;
     padding: 2px;
@@ -27,9 +33,12 @@ ul.navigation-bar-v li {
 
 
 ul.navigation-bar-v a:hover {
-	display: block;
-	padding:2px 10px;
+    display: block;
+    padding:2px 10px;
     text-decoration:none;
     color: red;
     background-color: green;
 }
+</pre>
+    </div>
+</div>
