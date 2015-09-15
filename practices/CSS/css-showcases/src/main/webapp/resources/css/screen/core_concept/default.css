@@ -1,17 +1,24 @@
 @CHARSET "UTF-8";
 
 body {
+	font-family:sans-serif;
 	background: #bbb;
+	font-size: 1em;
+	
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
 	color: red;
-	font-size: 16pt;
 }
 
 h2.section-title {
     color: blue;
-    font-size: 13pt;
+}
+
+em {
+	text-decoration: underline;
 }
 
 .section-content {

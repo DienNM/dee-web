@@ -16,5 +16,10 @@ public class CssController {
     public String demoCoreConcept() {
         return "core-concept/main";
     }
+    
+    @RequestMapping(value = "/building-block", method = RequestMethod.GET)
+    public String demoBuildingBlock() {
+        return "building-block/main";
+    }
 
 }

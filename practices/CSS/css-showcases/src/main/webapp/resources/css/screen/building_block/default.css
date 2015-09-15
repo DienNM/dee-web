@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family:sans-serif;
+	background: #bbb;
+	font-size: 1em;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	color: red;
+}
+
+h2.section-title {
+    color: blue;
+}
+
+em {
+	text-decoration: underline;
+}
+
+.section-content {
+	margin-left: 70px;
+}
+
+pre.code {
+    color: red;
+    width: 400px;
+    border: 1px solid #036;
+    background: #eee;
+    padding: 10px;
+}
+
+/* Example of DIV
+---------------------------------------*/
+#container {
+    padding: 20px;
+    border: 1px solid #000;
+    background: #556;
+}
+
+.box {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000;
+    background: #aaa;
+}
+
+.box p{
+    color: #F00;
+    background: #ddd;
+}
+
+/* Centering DIV
+-----------------------------------------*/
+#container1 {
+	width: 400px;
+	padding: 10px;
+	margin: 10px auto 20px auto;
+	border: 1px solid #000;
+	background: #CCC;
+}
