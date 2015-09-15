@@ -1,36 +1,7 @@
 @CHARSET "UTF-8";
 
-body {
-	font-family:sans-serif;
-	background: #bbb;
-	font-size: 1em;
-	
-	margin: 0px;
-	padding: 0px;
-}
-
-h1 {
-	color: red;
-}
-
-h2.section-title {
-    color: blue;
-}
-
 em {
 	text-decoration: underline;
-}
-
-.section-content {
-	margin-left: 70px;
-}
-
-pre.code {
-    color: red;
-    width: 400px;
-    border: 1px solid #036;
-    background: #eee;
-    padding: 10px;
 }
 
 /* Example of DIV
@@ -61,4 +32,23 @@ pre.code {
 	margin: 10px auto 20px auto;
 	border: 1px solid #000;
 	background: #CCC;
+}
+
+/* Example of Border
+---------------------------------------*/
+.border1 {
+	margin-bottom: 10px;
+    margin-right: 10px;
+	border-top: 5px dashed red;
+    border-right: 5px dotted red;
+    border-bottom: 5px solid red;
+    border-left: 5px double red;
+}
+
+.border2 {
+    margin-right: 10px;
+    border-top: 5px groove blue;
+    border-right: 5px ridge blue;
+    border-bottom: 5px inset blue;
+    border-left: 5px outset blue;
 }

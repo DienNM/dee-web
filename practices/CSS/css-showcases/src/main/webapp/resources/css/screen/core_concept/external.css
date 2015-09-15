@@ -1,2 +1,3 @@
-@IMPORT url("default.css");
+@IMPORT url("../common.css");
+@IMPORT url("../layout.css");
 @IMPORT url("layout.css");

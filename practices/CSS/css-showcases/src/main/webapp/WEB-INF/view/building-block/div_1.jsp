@@ -7,9 +7,6 @@
 			<div class="box">
 				<p>I'm in a box!</p>
 			</div>
-			<div class="box">
-				<p>I'm also in a box!</p>
-			</div>
 		</div>
 
 		<pre class="code">

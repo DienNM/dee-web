@@ -9,17 +9,15 @@
     
     
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/building_block/external.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/core_concept/external.css">
     <title>CSS Core Concept</title>
 </head>
 
 <body>
 	<div id = "header">
-		<h1>CSS Building Block</h1>
+		<h1>CSS Core Concept</h1>
 	</div>
 	
-	<%@ include file="div_1.jsp" %>
-    <%@ include file="div_2.jsp" %>
-    <%@ include file="border.jsp" %>
+	<%@ include file="font.jsp" %>
 </body>
 </html>

@@ -21,5 +21,15 @@ public class CssController {
     public String demoBuildingBlock() {
         return "building-block/main";
     }
+    
+    @RequestMapping(value = "/text", method = RequestMethod.GET)
+    public String demoTex() {
+        return "text/main";
+    }
+    
+    @RequestMapping(value = "/color-bg-img", method = RequestMethod.GET)
+    public String demoColorBackgroundImage() {
+        return "color-bg-img/main";
+    }
 
 }

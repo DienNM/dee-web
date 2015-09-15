@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family:sans-serif;
+	background: #bbb;
+	font-size: 1em;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	color: red;
+}
+
+h2.section-title {
+    color: blue;
+}
+
+.section-content {
+	margin-left: 70px;
+}
+
+pre.code {
+    color: red;
+    width: 400px;
+    border: 1px solid #036;
+    background: #eee;
+    padding: 10px;
+}
+
+/* Example of DIV
+---------------------------------------*/
