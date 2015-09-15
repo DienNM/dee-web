@@ -37,9 +37,9 @@ public class CssController {
         return "list/main";
     }
     
-    @RequestMapping(value = "/link", method = RequestMethod.GET)
-    public String demoLink() {
-        return "link/main";
+    @RequestMapping(value = "/table", method = RequestMethod.GET)
+    public String demoTables() {
+        return "table/main";
     }
 
 }
