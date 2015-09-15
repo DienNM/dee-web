@@ -13,6 +13,7 @@
     <mvc:annotation-driven />
     
     <mvc:resources mapping="/resources/css/screen/**" location="/resources/css/screen/" />
+    <mvc:resources mapping="/resources/images/**" location="/resources/images/*" />
     
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/" />

@@ -9,17 +9,17 @@
     
     
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/building_block/external.css">
-    <title>CSS Building Block</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="../resources/css/screen/color-bg-img/external.css">
+    <title>CSS Color Background Image</title>
 </head>
 
 <body>
 	<div id = "header">
-		<h1>CSS Building Block</h1>
+		<h1>CSS Color Background Image</h1>
 	</div>
 	
-	<%@ include file="div_1.jsp" %>
-    <%@ include file="div_2.jsp" %>
-    <%@ include file="border.jsp" %>
+	<%@ include file="color.jsp" %>
+    <%@ include file="background.jsp" %>
+    <%@ include file="background-image.jsp" %>
 </body>
 </html>
