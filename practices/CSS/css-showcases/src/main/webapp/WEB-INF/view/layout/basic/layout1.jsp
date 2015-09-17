@@ -72,18 +72,12 @@
             <div class="spacer"></div>
         </div>
 <pre class="code">
-.sub-container1 {
-    position:relative;
+.div_fixed {
+    position: fixed;
+    left: 400px;
+    top: 100px;
     
-    width: 400px;
-    height: auto;
-    border: 1px solid #aaa;
-    background-color: #bbb;
-}
-.div_absolute {
-    position: absolute;
-    left: 380px;
-    top: -20px;
+    color: #fff;
     
     width: 70px;
     height: 70px;
@@ -91,8 +85,5 @@
     margin: 3px 10px;
 }
 </pre>
-
-
-
     </div>
 </div>

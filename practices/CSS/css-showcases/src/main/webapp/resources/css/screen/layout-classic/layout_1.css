@@ -1,0 +1,58 @@
+body {
+	font-size: 80%;
+	font-family: 'Lucida Grande', Verdana, sans-serif;
+	margin: 10px;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+p {
+	font-size: 100%;
+	line-height: 150%;
+}
+
+/* Layout
+------------------------------------------*/
+
+#masthead {
+	padding:10px;
+	margin: 10px 0px;
+	
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+#footer {
+	clear: both;
+	
+	padding:10px;
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+#sidebar {
+	float: right;
+	
+	width: 36%;
+	margin-bottom:10px;
+	padding:10px;
+    border:1px solid #000;
+}
+
+#content {
+	margin-right: 40%;
+	margin-bottom: 10px; 
+	
+	padding:10px;
+    border:1px solid #000;
+}
