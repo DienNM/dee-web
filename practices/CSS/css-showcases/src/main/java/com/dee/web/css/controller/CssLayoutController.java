@@ -63,19 +63,19 @@ public class CssLayoutController {
         return "layout/layout-manipulation/main_2";
     }
     
-    @RequestMapping(value = "/manipulation3", method = RequestMethod.GET)
-    public String demoLayoutManipulation3() {
-        return "layout/layout-manipulation/main_3";
+    @RequestMapping(value = "/template1", method = RequestMethod.GET)
+    public String demoLayoutTemplate1() {
+        return "layout/template/main_1";
     }
     
-    @RequestMapping(value = "/manipulation4", method = RequestMethod.GET)
-    public String demoLayoutManipulation4() {
-        return "layout/layout-manipulation/main_4";
+    @RequestMapping(value = "/template2", method = RequestMethod.GET)
+    public String demoLayoutTemplate2() {
+        return "layout/template/main_2";
     }
     
-    @RequestMapping(value = "/manipulation5", method = RequestMethod.GET)
-    public String demoLayoutManipulation5() {
-        return "layout/layout-manipulation/main_5";
+    @RequestMapping(value = "/template3", method = RequestMethod.GET)
+    public String demoLayoutTemplate3() {
+        return "layout/template/main_3";
     }
     
 }
