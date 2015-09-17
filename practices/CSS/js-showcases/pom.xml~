@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dee.web</groupId>
-	<artifactId>css-showcases</artifactId>
+	<artifactId>js-showcases</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>css-showcases</name>
+	<name>js-showcases</name>
 	<url>https://github.com/DienNM</url>
 
 	<developers>
@@ -86,7 +86,7 @@
 				<version>9.2.11.v20150529</version>
 				<configuration>
 					<webApp>
-						<contextPath>/css</contextPath>
+						<contextPath>/js</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -97,7 +97,7 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-				    <path>/css</path>
+				    <path>/sample01</path>
 				</configuration>
 			</plugin>
 		</plugins>

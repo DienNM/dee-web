@@ -1,8 +1,5 @@
-@CHARSET "UTF-8";
+@CHARSET "ISO-8859-1";
 
-body {
-	background: blue;
-}
 
 .error {
 	color: red;
