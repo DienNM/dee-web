@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
  **/
 
 @Controller
-@RequestMapping("/sample01")
-public class JSController {
+@RequestMapping("/fundamental")
+public class JsFundamentalController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String getStudentDetail() {
-        return "student_detail";
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public String getFundamental() {
+        return "fundamental/main";
     }
 
 }
