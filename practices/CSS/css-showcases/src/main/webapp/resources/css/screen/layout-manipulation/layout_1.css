@@ -1,7 +1,9 @@
 body {
+    width: 760px;
+    margin:10px;
+    
     font-size: 80%;
     font-family: 'Lucida Grande', Verdana, sans-serif;
-    margin: 10px;
 }
 h1 {
     font-size: 150%;
@@ -22,9 +24,9 @@ p {
 
 /* Layout
 ------------------------------------------*/
-
 #masthead {
     height: 60px;
+    width: 738px;
     
     padding:10px;
     margin: 10px 0px;
@@ -34,40 +36,57 @@ p {
 }
 
 #footer {
-    margin-left:30%;
-    margin-right:30%;
+    clear: both;
+    width: 738px;
+    
     padding:10px;
     border:1px solid #000;
     background-color:#CCC;
 }
 
 #sidebar_a {
-    position: absolute;
-    top: 141px;
-    left: 10px;
-     
-    width:25%;
+    float: left;
+        
+    width:158px;
     margin-bottom:10px;
     padding:10px;
     border:1px solid #000;
 }
 
 #sidebar_b {
-    position: absolute;
-    top: 141px;
-    right: 10px;
-     
-    width:25%;
+    float: right;
+    width:158px;
     margin-bottom:10px;
     padding:10px;
     border:1px solid #000;
 }
 
 #content {
-    margin-left:30%;
-    margin-right:30%;
+    width: 338px;
+    
+    margin-left: 200px;
+    margin-right: 200px;
     
     margin-bottom:10px;
     padding:10px;
     border:1px solid #000;
 }
+
+/* Customize Layout with contextual
+---------------------------------------------*/
+
+#switch #sidebar_a {
+    float:right;
+}
+
+#switch #sidebar_b {
+    float:left;
+}
+
+#two-columns #content {
+	margin-right: 0px;
+	width: 540px;
+}
+
+#two-columns #sidebar_b {
+	display: none;

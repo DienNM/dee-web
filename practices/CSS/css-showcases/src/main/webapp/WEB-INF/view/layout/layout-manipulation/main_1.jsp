@@ -6,13 +6,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" media="screen" type="text/css"
-    href="../resources/css/screen/layout-classic/layout_8.css">
+    href="../resources/css/screen/layout-manipulation/layout_1.css">
 <title>Layout Classic</title>
 </head>
 
-<body>
+<body id="two-columns">
     <div>
-        <h1>Liquid Positioned Three-Column Layout</h1>
+        <h1>Fixed and Floated Three-Column Layout</h1>
 
         <div id="masthead">Masthead</div>
         

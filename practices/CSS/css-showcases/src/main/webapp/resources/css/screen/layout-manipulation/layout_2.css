@@ -1,0 +1,43 @@
+body {
+	background-color: #ccc;
+}
+
+#masthead {
+    height: 60px;
+    padding:10px;
+    margin: 10px 0px;
+    
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+#footer {
+    clear: both;
+    padding:10px;
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+.container {
+    padding: 0 360px 0 30px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+    border: 1px solid red;
+}
+.content {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+.sidebar {
+    float: right;
+    margin-right: -330px;
+    width: 300px;
+    background-color: #fff;
+}
+
+.content, .sidebar {
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
