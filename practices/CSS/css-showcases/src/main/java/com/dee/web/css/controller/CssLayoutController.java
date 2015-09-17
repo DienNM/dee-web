@@ -46,4 +46,20 @@ public class CssLayoutController {
     public String demoLayoutClassic5() {
         return "layout/classic/main_5";
     }
+    
+    
+    @RequestMapping(value = "/classic6", method = RequestMethod.GET)
+    public String demoLayoutClassic6() {
+        return "layout/classic/main_6";
+    }
+    
+    @RequestMapping(value = "/classic7", method = RequestMethod.GET)
+    public String demoLayoutClassic7() {
+        return "layout/classic/main_7";
+    }
+    
+    @RequestMapping(value = "/classic8", method = RequestMethod.GET)
+    public String demoLayoutClassic8() {
+        return "layout/classic/main_8";
+    }
 }

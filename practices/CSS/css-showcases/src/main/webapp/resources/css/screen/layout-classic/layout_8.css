@@ -1,0 +1,73 @@
+body {
+    font-size: 80%;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+    margin: 10px;
+}
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+p {
+    font-size: 100%;
+    line-height: 150%;
+}
+
+/* Layout
+------------------------------------------*/
+
+#masthead {
+    height: 60px;
+    
+    padding:10px;
+    margin: 10px 0px;
+    
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+#footer {
+    margin-left:30%;
+    margin-right:30%;
+    padding:10px;
+    border:1px solid #000;
+    background-color:#CCC;
+}
+
+#sidebar_a {
+    position: absolute;
+    top: 141px;
+    left: 10px;
+     
+    width:25%;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #000;
+}
+
+#sidebar_b {
+    position: absolute;
+    top: 141px;
+    right: 10px;
+     
+    width:25%;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #000;
+}
+
+#content {
+    margin-left:30%;
+    margin-right:30%;
+    
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #000;
+}
