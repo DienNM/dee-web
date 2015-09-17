@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 80%;
+	font-family: 'Lucida Grande', Verdana, sans-serif;
+	margin: 10px;
+	background-color: #CCC;
+}
+
+/* Example of Layout
+---------------------------------------*/
+h1 {
+	font-size: 150%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+p {
+	font-size: 100%;
+	line-height: 150%;
+}
+
+.image_floading_left {
+	float: left;
+	
+	width: 70px;
+	height: 70px;
+	background-color: black;
+    margin: 3px 10px;
+}
+
+.image_floading_right {
+    float: right;
+    
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    margin: 3px 10px;
+}
+
+.spacer {
+	clear: both;
+}
+
+/* Example of Layout
+---------------------------------------*/
+
+.sub-container {
+	width: 400px;
+	height: auto;
+	border: 1px solid #aaa;
+	background-color: #bbb;
+}
+
+.div_relative {
+	position: relative;
+	left: 380px;
+	top: -20px;
+	
+	width: 70px;
+    height: 70px;
+    background-color: black;
+    margin: 3px 10px;
+}
+
+.sub-container1 {
+	position:relative;
+	
+    width: 400px;
+    height: auto;
+    border: 1px solid #aaa;
+    background-color: #bbb;
+}
+
+.div_absolute {
+	position: absolute;
+    left: 380px;
+    top: -20px;
+    
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    margin: 3px 10px;
+}
+
+.sub-container2 {
+    width: 400px;
+    height: auto;
+    border: 1px solid #aaa;
+    background-color: #bbb;
+}
+
+.div_fixed {
+    position: fixed;
+    left: 400px;
+    top: 100px;
+    
+    color: #fff;
+    
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    margin: 3px 10px;
+}

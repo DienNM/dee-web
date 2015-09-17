@@ -9,37 +9,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
  **/
 
 @Controller
-@RequestMapping("/get2know")
+@RequestMapping("/layout")
 public class CssLayoutController {
 
-    @RequestMapping(value = "/core-concept", method = RequestMethod.GET)
-    public String demoCoreConcept() {
-        return "core-concept/main";
+    @RequestMapping(value = "/basic", method = RequestMethod.GET)
+    public String demoLayoutBasic() {
+        return "layout/basic/main";
     }
     
-    @RequestMapping(value = "/building-block", method = RequestMethod.GET)
-    public String demoBuildingBlock() {
-        return "building-block/main";
+    @RequestMapping(value = "/basic1", method = RequestMethod.GET)
+    public String demoLayoutBasic1() {
+        return "layout/basic/main1";
     }
     
-    @RequestMapping(value = "/text", method = RequestMethod.GET)
-    public String demoTex() {
-        return "text/main";
+    @RequestMapping(value = "/classic", method = RequestMethod.GET)
+    public String demoLayoutClassic() {
+        return "layout/classic/main";
     }
     
-    @RequestMapping(value = "/color-bg-img", method = RequestMethod.GET)
-    public String demoColorBackgroundImage() {
-        return "color-bg-img/main";
-    }
-    
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public String demoList() {
-        return "list/main";
-    }
-    
-    @RequestMapping(value = "/table", method = RequestMethod.GET)
-    public String demoTables() {
-        return "table/main";
-    }
-
 }
