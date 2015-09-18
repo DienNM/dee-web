@@ -18,11 +18,20 @@
     
 <body>
 
-<h1>Mini Game</h>
+<h1>Example of Object Oriented JS</h>
 
-<div id = "guessResult"></div>
+See the result in console
+
 <div>
-    <script type="text/javascript">miniGameGuess();</script>
+    <script type="text/javascript">
+    	var student = new Student("nmdien61@gmail.com", "Dien Nguyen");
+    	student.enroll();
+    	student.go2School();
+
+    	var student1 = new Student("diennguyen@gmail.com", "Dien Nguyen");
+    	student1.enroll();
+    	student1.go2School();
+    </script>
 </div>
 
 </body>
