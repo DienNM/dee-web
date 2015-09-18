@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
                               http://java.sun.com/xml/ns/javaee/web-app.xsd" version="3.0">
                               
-    <display-name>DEE Web Sample 01</display-name>
+    <display-name>JS Examples</display-name>
     
     <context-param>
         <param-name>contextConfigLocation</param-name>

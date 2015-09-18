@@ -12,9 +12,29 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/fundamental")
 public class JsFundamentalController {
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
-    public String getFundamental() {
-        return "fundamental/main";
+    @RequestMapping(value = "example1", method = RequestMethod.GET)
+    public String getFundamental1() {
+        return "fundamental/example1";
+    }
+    
+    @RequestMapping(value = "example2", method = RequestMethod.GET)
+    public String getFundamental2() {
+        return "fundamental/example2";
+    }
+    
+    @RequestMapping(value = "example3", method = RequestMethod.GET)
+    public String getFundamental3() {
+        return "fundamental/example3";
+    }
+    
+    @RequestMapping(value = "example4", method = RequestMethod.GET)
+    public String getFundamental4() {
+        return "fundamental/example4";
+    }
+    
+    @RequestMapping(value = "example5", method = RequestMethod.GET)
+    public String getFundamental5() {
+        return "fundamental/example5";
     }
 
 }

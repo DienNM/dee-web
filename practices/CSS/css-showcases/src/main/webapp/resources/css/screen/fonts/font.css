@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+body {
+    font-size: 80%;
+    font-family: 'Lucida Grande', Verdana, sans-serif;
+    margin: 10px;
+    background-color: #CCC;
+}
