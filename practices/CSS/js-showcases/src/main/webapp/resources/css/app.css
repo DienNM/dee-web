@@ -1,1 +1,12 @@
 @CHARSET "UTF-8";
+
+#treasuremap {
+	width: 500px;
+	height: 500px;
+}
+
+#anchor {
+	color: red;
+	font-weight: bold;
+	font-size: 2em;
+}
